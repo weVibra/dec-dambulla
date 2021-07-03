@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="dark">
+    <ion-title class="dec-name ion-text-center">
+      දුරකථන නාමාවලිය <br />
+      Telephone Directory
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Start price list -->
+  <ion-row>
+    <ion-col>
+      <img src="assets\images\dec-dambulla\dedicated-economoc-center-directory.jpg" alt="Dedicated Economic Center" class="border-radius">
+    </ion-col>
+  </ion-row>
+  <!-- End -->
+
+  <!-- Start price list -->
+  <ion-row>
+    <ion-col>
+      <p class="price-list">දුරකථන නාමාවලිය</p>
+    </ion-col>
+  </ion-row>
+  <!-- End -->
+
+  <ion-item *ngFor ="let item of directory" class="directory">
+    <ion-avatar slot="start" class="avatar">
+      {{item.no}}
+    </ion-avatar>
+    <ion-label class="ion-text-wrap">
+      <ion-text color="dark">
+        <h3>{{item.name}}</h3>
+      </ion-text>
+      <ion-text color="dark">
+        <p class="small">{{item.category}}</p>
+      </ion-text>
+      <ion-text color="primary">
+        <p>{{item.contact}}</p>
+      </ion-text>
+    </ion-label>
+  </ion-item>
+
+</ion-content>

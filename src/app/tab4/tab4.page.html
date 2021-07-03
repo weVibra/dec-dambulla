@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="dark">
+    <ion-title class="dec-name ion-text-center">
+      උණුසුම් පුවත්<br />
+      News
+    </ion-title>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Start price list -->
+  <ion-row>
+    <ion-col>
+      <img src="assets\images\dec-dambulla\dedicated-economoc-center-blog.jpg" alt="Dedicated Economic Center" class="border-radius">
+    </ion-col>
+  </ion-row>
+  <!-- End -->
+
+  <!-- Start price list -->
+  <ion-row>
+    <ion-col>
+      <p class="price-list">උණුසුම් පුවත් තීරය</p>
+    </ion-col>
+  </ion-row>
+  <!-- End -->
+
+  <ion-row *ngFor ="let item of blogs" class="contact">
+    <ion-card>
+      <img src="{{item.poster}}" />
+      <ion-card-header>
+        <ion-card-subtitle>{{item.date}}</ion-card-subtitle>
+        <ion-card-title>{{item.title}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        {{item.caption}}
+      </ion-card-content>
+    </ion-card>
+  </ion-row>
+
+</ion-content>

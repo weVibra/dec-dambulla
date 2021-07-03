@@ -1,0 +1,48 @@
+* { 
+    font-family: 'Noto Sans Sinhala', sans-serif; 
+    margin: 0px;
+    padding: 0px;
+}
+
+/* title */
+.dec-name {
+    font-size: small;
+}
+
+/* slider image border*/
+.border-radius{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* price list */
+.price-list {
+    color:aliceblue;
+    text-align: center;
+    background-color: #333333;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 10px 0px 10px;
+}
+
+ion-card {
+    margin: 10px 30px 10px 30px;
+}
+
+ion-card-subtitle {
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+    font-size: 10px;
+}
+
+ion-card-title {
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+    font-size: 14px;
+}
+
+ion-card-content {
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+    font-size: 12px;
+}

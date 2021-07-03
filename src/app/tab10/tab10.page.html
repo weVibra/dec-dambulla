@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+
+  <ion-toolbar color="dark">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <!-- Start price list -->
+  <ion-row>
+    <ion-col>
+      <img src="assets\images\dec-dambulla\dedicated-economoc-center-days.jpg" alt="Dedicated Economic Center" class="border-radius">
+    </ion-col>
+  </ion-row>
+  <!-- End -->
+
+<!-- Start price list -->
+<ion-row>
+  <ion-col>
+    <p class="price-list">දෛනික එළවළු මිළ දර්ශකය</p>
+  </ion-col>
+</ion-row>
+<!-- End -->
+
+<!-- Start price date -->
+<ion-row>
+  <ion-col>
+    <p *ngFor ="let item of price" class="no-repeat price-date">{{item.date}}</p>
+  </ion-col>
+</ion-row>
+<!-- End -->
+
+<!-- Start data table -->
+<div style="overflow-x:auto;" class="table-div">
+  <table class="table">
+    <tr>
+      <th>අංක</th>
+      <th>එළවළු වර්ගය</th>
+      <th>1kg මිළ</th>
+    </tr>
+    <tbody class="myTable">
+    <tr *ngFor ="let item of price">
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td>{{item.price}}</td>
+    </tr>
+    </tbody>
+  </table>
+  </div>
+  <!-- End -->
+
+  <ion-row class="ion-center">
+    <ion-col>
+          <p class="declaration">ඉහත දක්වා ඇති මිළ ගණන් සියල්ල දඹුල්ල ආර්ථික මධ්‍යස්ථානයේ වෙළඳ සංගමය විසින් නිකුත් කරන ලද තොරතුරු වේ. මෙම තොරතුරුවල වගකීම අප විසින් දරන්නේ නැත.</p>
+    </ion-col>
+  </ion-row>
+
+</ion-content>

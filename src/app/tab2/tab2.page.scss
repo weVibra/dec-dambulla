@@ -1,0 +1,56 @@
+* { 
+    font-family: 'Noto Sans Sinhala', sans-serif; 
+    margin: 0px;
+    padding: 0px;
+}
+
+/* title */
+.dec-name {
+    font-size: small;
+}
+
+/* slider image border*/
+.border-radius{
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* price list */
+.price-list {
+    color:aliceblue;
+    text-align: center;
+    background-color: #333333;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 10px 0px 10px;
+}
+
+/* price list seven days */
+.price-sevenday {
+    font-size: small;
+    color:aliceblue;
+    text-align: center;
+    background-color: #e20a0a;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 5px 30px 0px 30px;
+}
+
+/* date buttons */
+ion-button {
+  margin: 10px 60px 10px 60px;
+  height: 30px;
+  font-size: small;
+  cursor: pointer;
+}
+
+.price-dec {
+  font-size: smaller;
+  color:aliceblue;
+  text-align: center;
+  background-color: #e20a0a;
+  padding: 8px;
+  border-radius: 20px;
+  margin: 10px 30px 10px 30px;
+}
+
